@@ -1,6 +1,6 @@
 # therasputin64.github.io
 > just another portfolio in the void...
-<img src="help.gif" width="800" height="600" alt="tv static representing my soul">
+<img src="help.gif" width="600" height="500" alt="tv static representing my soul">
 
 ```
 └── emptiness/

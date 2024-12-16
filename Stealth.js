@@ -51,5 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     stealthCard.addEventListener('mouseenter', startAnimation);
     stealthCard.addEventListener('mouseleave', stopAnimation);
+    stealthCard.addEventListener('click', () => window.location.href = 'https://github.com/TheRasputin64/StealthText');
     window.addEventListener('resize', resizeCanvas);
 });

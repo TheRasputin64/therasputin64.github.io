@@ -36,3 +36,4 @@ const matrixBackground = new MatrixBackground(quizlessCard);
 Object.assign(quizlessCard.style, { position: 'relative', zIndex: '1' });
 quizlessCard.addEventListener('mouseenter', () => matrixBackground.start());
 quizlessCard.addEventListener('mouseleave', () => matrixBackground.stop());
+quizlessCard.addEventListener('click', () => window.location.href = 'https://github.com/TheRasputin64/Quizless');

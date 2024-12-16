@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     window.addEventListener('pageshow', (event) => {if (event.persisted) {overlay.style.transform = 'translateX(100%)';overlay.style.transition = 'none';}window.scrollTo({top: 0,behavior: 'smooth'});});
     setTimeout(() => {overlay.style.transform = 'translateX(100%)';overlay.style.transition = 'transform 0.5s ease-in-out';}, 100);
-    const cvLink = document.querySelector('a[href="CV.pdf"], a[href="/"]');if (cvLink) {cvLink.addEventListener('click', (e) => {e.preventDefault();const href = cvLink.getAttribute('href');pageTransition(href);});}
+    const cvLink = document.querySelector('a[href="CV.pdf"], a[href="/"],a[href="https://github.com/TheRasputin64/"]');if (cvLink) {cvLink.addEventListener('click', (e) => {e.preventDefault();const href = cvLink.getAttribute('href');pageTransition(href);});}
     const revealProjects = () => {projects.forEach(project => {const projectTop = project.getBoundingClientRect().top;const windowHeight = window.innerHeight;if (projectTop < windowHeight * 0.85) {project.style.opacity = '1';project.style.transform = 'translateY(0)';}});};
     projects.forEach(project => {project.style.opacity = '0';project.style.transform = 'translateY(30px)';project.style.transition = 'opacity 0.6s ease, transform 0.6s ease';});
     window.addEventListener('scroll', revealProjects);revealProjects();

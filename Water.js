@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Object.assign(this.waterCard.style, { position: 'relative', cursor: 'pointer', zIndex: '1' });
             this.waterCard.addEventListener('mouseenter', () => this.start());
             this.waterCard.addEventListener('mouseleave', () => this.stop());
-            this.waterCard.addEventListener('click', () => window.location.href = 'https://github.com/TheRasputin64/StealthText');
+            this.waterCard.addEventListener('click', () => window.location.href = 'https://github.com/TheRasputin64/WaterReminder');
         }
     }
     const waterNotificationSystem = new WaterNotificationSystem('water-card');

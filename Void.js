@@ -40,4 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleMouseLeave = debounce(() => {if (studentInterval) clearInterval(studentInterval);if (certInterval) clearInterval(certInterval);stopMorph();}, 50);
     voidCard.addEventListener('mouseenter', handleMouseEnter);
     voidCard.addEventListener('mouseleave', handleMouseLeave);
+    voidCard.addEventListener('click', () => {window.location.href = 'https://github.com/TheRasputin64/Void-Certificates';});
 });
